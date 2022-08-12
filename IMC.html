@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="funciones.js"></script>
+        <link rel="stylesheet" type="text/css" href="./assets/css/estiloimc.css">
+          <title>Calcula IMC</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="section">
+                <div class="blog-post">
+                <h1 class="blog-title">Calculadora de IMC</h1>
+                <p>Esta calculadora proporciona el IMC y la correspondiente categoría de 
+                    nivel de peso según el IMC. Utilícela para adultos de 20 años o más.</p>
+        <form method="get" action="./assets/php/insertar.php">
+            <label class="textlabel"><input type="text" placeholder="Escribe tu peso" name="Peso"> Kg</label>
+            <br><br>
+            <label class="textlabel"><input type="text" placeholder="Escribe tu altura" name="Altura"> Cm</label>
+            <br><br>
+            <label class="textlabel">M<input class="rad" type="radio" name="Sexo" value="M"></label>
+            <label class="textlabel">F<input class="rad" type="radio" name="Sexo" value="F"></label>
+            <br><br>
+            <input type="submit" value="Calcular">
+        </form>
+
+    </div>
+            </div>
+ 
+
+        <div class="blog-post">
+            <h1 class="blog-title">Como se calcula</h1>
+
+            <p><b>IMC</b></p>
+            <p>IMC es el acrónimo de Índice de Masa Corporal, una medida ampliamente utilizada 
+                para calcular si el peso de una persona se encuentra proporcionado respecto a 
+                su altura o, por el contrario, padece de sobrepeso o infrapeso.</p>
+
+            <p><b>Como calcular el IMC</b></p>
+            <p>Para calcular el imc de una persona únicamente se debe dividir el peso de ésta 
+                -expresado en kilogramos-, por su altura elevada al cuadrado -expresada en metros-. 
+                Por ejemplo una persona con una altura de 1,80 metros y un peso de 80 kg, tendrá un 
+                imc de 80 / 1,802 = 24,69. Existen algunos ajustes y mejoras a la fórmula original del 
+                imc, que pretenden tener en cuenta otros factores importantes a la hora de decidir si el 
+                peso de una persona puede considerarse saludable.</p>
+
+            <p><b>Formula</b></p>
+            <p>Su fórmula es IMC=P/E2. Es decir, la fórmula del índice de masa corporal se calcula fácilmente 
+                dividiendo el peso por la estatura al cuadrado. Hay que tener en cuenta que la estatura debe 
+                estar medida en metros y no en centímetros.</p>
+
+            <p><b>Masa Corporal</b></p>
+            <p>En el ámbito de la nutrición y salud, se habla de masa corporal de una persona para referirse al 
+                peso de la misma o, más técnicamente, a la cantidad de materia que tiene su cuerpo.</p>
+        </div> 
+        </div>
+        <footer>
+            <h1>ETERNAL HEALTH</h1>
+            <p>Derechos Reservados &copy; 2022</p>
+        </footer> 
+
+        <!-- 
+            CREATE TABLE DatosIMC (
+ID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+Peso FLOAT,
+Altura FLOAT,
+Sexo VARCHAR(50),
+IMC VARCHAR(50),
+Categoria VARCHAR(50)
+);
+        -->
+
+    </body>
